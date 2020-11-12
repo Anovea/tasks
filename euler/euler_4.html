@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number1
+        let number2
+        let result1
+        let result2 = 0
+        for(number1 = 999; number1 > 99; number1--)         //Цикл для перебора первого трёхзначного числа
+        {
+            for(number2 = 999; number2 > 99; number2--)     //Цикл для перебора второго трёхзначного числа
+            {
+                result1 = number1 * number2                 //Произведение первого и второго чисел
+                let one = result1 % 10                      //Получение последней цифры
+                let rem1 = Math.floor(result1 / 10)         //Удаление последней цифры из числа
+                let two = rem1 % 10
+                let rem2 = Math.floor(rem1 / 10)
+                let three = rem2 % 10
+                let rem3 = Math.floor(rem2 / 10)
+                let four = rem3 % 10
+                let rem4 = Math.floor(rem3 / 10)
+                let five = rem4 % 10
+                let rem5 = Math.floor(rem4 / 10)
+                let six = rem5 % 10
+                if((one == six) && (two == five) &&         //Если первое число равно шестому, второе равно пятому,
+                (three == four) && (result2 < result1))     //третье равно четвёртому и это число является наибольшим палиндромом то...
+                {
+                    result2 = result1                       //Сохраняем это число в результат
+                }
+            }
+        }
+        alert(result2)                                //Вывод результата
+    </script>
+</body>
+</html>

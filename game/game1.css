@@ -1,0 +1,29 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    display: flex;
+    justify-content: center
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+#field td
+{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.red
+{
+    background-color: red;
+}

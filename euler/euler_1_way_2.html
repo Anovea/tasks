@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+    let number = result = 0                     //Создание переменных для числа и результата
+    while(number < 1000)                        //Перебираем все числа от 0 до 999
+    {
+        if(number % 3 == 0 || number % 5 == 0)  //Если число кратно трём или пяти то...
+        {
+            result += number                    //Прибавляем к результату это число
+        }
+        number++                                //Берём следующее число
+    }
+    alert(result)                         //Вывод результата
+</script>
+</body>
+</html>

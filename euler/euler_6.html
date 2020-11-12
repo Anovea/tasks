@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+    let number1 = number2 = result1 = result2 = 0
+    for(let i = 1; i <= 100; i++)                   //Перебор чисел от 1 до 100
+    {
+        number1 = Math.pow(i, 2)                    //Возводение каждого числа во вторую степень
+        result1 += number1                          //Сумма квадратов всех чисел
+        number2 += i                                //Сумма всех чисел
+    }
+    result2 = Math.pow(number2, 2)                  //Возведение в квадрат суммы всех чисел
+    let result = result2 - result1                  //Разность между суммой квадратов и квадаратом суммы (но на самом деле разность между квадратом суммы и суммой квадратов, так как в примере задачи написано одно, а числа вычитаются наоборот)
+    alert(result)                             //Вывод результата
+</script>
+</body>
+</html>
