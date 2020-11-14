@@ -65,79 +65,45 @@
             </div>
         </div>
 
-        <div class="tovar">
-        <div id="kateg">
-            <h2 style = "padding-left: 10px; padding-bottom: 15px;"> Категории </h2>
-            <ul>
-                <li> <p> <input type="checkbox" name="option1" value="a1" checked> Все товары</p> </li>
-                <li> <p> <input type="checkbox" name="option2" value="a2"> Гироскутеры</p> </li>
-                <li> <p> <input type="checkbox" name="option3" value="a3"> Электросамокаты</p> </li>
-                <li> <p> <input type="checkbox" name="option4" value="a4"> Сигвеи</p> </li>
-            </ul>
-        </div>
-
         <div id="tovar_block">
+            <h2 style = "padding-left: 10px; padding-bottom: 15px;"> Категории </h2>
+            <input type="radio" name="option" id="all" checked>Все ТОВАРЫ
+            <input type="radio" name="option" id="a1">Гироскутеры
+            <input type="radio" name="option" id="a2">Электросамокаты
+            <input type="radio" name="option" id="a3">Сигвеи
             <h1> ТОВАРЫ </h1>
-            <div class="block">
-                <div> 
-                    <div class="pic_tov"> КАРТИНКА </div>
-                    <div class="info_tov">
-                    <p> Гироскутер </p>
-                    <h3> 12.990 руб </h3>
-                    <p> Вид: восхитителен </p>    
-                    </div>
+            <div class="tovar giro"> 
+                <div class="pic_tov">
+                    КАРТИНКА
                 </div>
-
-                <div> 
-                    <div class="pic_tov"> КАРТИНКА </div>
-                    <div class="info_tov">
+                <div class="info_tov">
                     <p> Гироскутер </p>
                     <h3> 12.990 руб </h3>
-                    <p> Вид: восхитителен </p>    
-                    </div>
+                    <p> Вид: восхитителен </p>
                 </div>
             </div>
-
-            <div class="block">
-                <div> 
-                <div class="pic_tov"> КАРТИНКА </div>
+        
+            <div class="tovar electro"> 
+                <div class="pic_tov">
+                    КАРТИНКА
+                </div>
                 <div class="info_tov">
-                    <p> Гироскутер </p>
+                    <p> Электросамокат </p>
                     <h3> 12.990 руб </h3>
                     <p> Вид: восхитителен </p>    
-                </div>
-                </div>
-
-                <div> 
-                <div class="pic_tov"> КАРТИНКА </div>
-                <div class="info_tov">
-                    <p> Гироскутер </p>
-                    <h3> 12.990 руб </h3>
-                    <p> Вид: восхитителен </p>    
-                </div>
                 </div>
             </div>
-
-            <div class="block">
-                <div> 
-                <div class="pic_tov"> КАРТИНКА </div>
+        
+            <div class="tovar sigway"> 
+                <div class="pic_tov">
+                    КАРТИНКА
+                </div>
                 <div class="info_tov">
-                    <p> Гироскутер </p>
+                    <p> Сигвей </p>
                     <h3> 12.990 руб </h3>
                     <p> Вид: восхитителен </p>    
-                </div>
-                </div>
-
-                <div> 
-                <div class="pic_tov"> КАРТИНКА </div>
-                <div class="info_tov">
-                    <p> Гироскутер </p>
-                    <h3> 12.990 руб </h3>
-                    <p> Вид: восхитителен </p>    
-                </div>
                 </div>
             </div>
-        </div>
         </div>
 
         <div class="brends">
@@ -151,8 +117,32 @@
                 <p style="text-align: center;"> Картинка с брендами </p>
             </div>
         </div>
+
+        <div class="polez_info">
+            <div class="text"> 
+                <h1> Полезная информация </h1>
+                <p>ЗДЕСЬ ВСЯ ПОЛЕЗНАЯ ИНФА</p>
+            </div>
+
+            <div class="foto">
+               <div class="info_pic"> 
+                   <p>Картинка</p>
+                   <p style="padding-top: 65%;">Текст к картинке</p> 
+               </div>
+            </div>
+        </div>
         <div id="returned">
         <a href="#"> <img src="img/strelka.png" width="70" height="70"></a>
+        </div>
+
+        <div class="email">
+            <h1> Подпишись на нашу рассылку </h1>
+
+            <div class="rassilka">
+               <div> <input type="text" placeholder="ФИО"> </div>
+               <div> <input type="text" placeholder="E-mail"> </div>
+               <div> <input type="submit" value="Подписаться"> </div>
+            </div>
         </div>
     </main>
     
